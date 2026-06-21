@@ -1,0 +1,68 @@
+# Xcode
+.DS_Store
+build/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# Workspace/Project files
+*.xcworkspace
+xcshareddata/WorkspaceSettings.xcsettings
+
+# Swift Package Manager
+.build/
+Packages/
+.swiftpm/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+
+# Xcode archives
+*.xcarchive
+
+# App bundles and packages
+*.app
+*.ipa
+
+# Debug symbols
+*.dSYM
+*.dSYM.zip
+
+# Provisioning & signing
+*.mobileprovision
+*.cer
+*.p12
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Misc
+*.hmap
+*.orig
+*.swp
+*.lock
+.env
+.env.*
+.secret
+
+# Ignore build products, intermediate files and generated code
+.swift-version
+.swiftpm
+.build
+.DS_Store

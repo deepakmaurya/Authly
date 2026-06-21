@@ -1,0 +1,50 @@
+name: Authly
+options:
+  bundleIdPrefix: com.mg
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    CODE_SIGN_IDENTITY: "-"
+    ENABLE_HARDENED_RUNTIME: YES
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+
+targets:
+  Authly:
+    type: application
+    platform: macOS
+    sources:
+      - path: Authly
+    resources:
+      - path: Authly/Assets.xcassets
+    info:
+      path: Authly/Info.plist
+      properties:
+        CFBundleName: Authly
+        CFBundleDisplayName: Authly
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        LSMinimumSystemVersion: "14.0"
+        LSApplicationCategoryType: public.app-category.utilities
+        NSCameraUsageDescription: "Authly needs the camera to scan QR codes for adding 2FA accounts."
+        NSHighResolutionCapable: true
+    entitlements:
+      path: Authly/Authly.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.device.camera: true
+        com.apple.security.files.user-selected.read-write: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.mg.Authly
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_PREVIEWS: YES
+        SWIFT_EMIT_LOC_STRINGS: YES
+        COMBINE_HIDPI_IMAGES: YES

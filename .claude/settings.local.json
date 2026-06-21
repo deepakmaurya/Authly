@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/deepakmaurya/Downloads/**)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/deepakmaurya/Downloads/mg_secure_icon_512.png)",
+      "Bash(sips *)"
+    ]
+  }
+}
